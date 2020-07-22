@@ -20,6 +20,7 @@ class GameMap
 
 
     protected:
+       
         
 
     private:

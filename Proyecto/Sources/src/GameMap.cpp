@@ -15,6 +15,7 @@ void GameMap::draw()
             cout << cells[i][j].id;
         } 
         cout << endl;
+        
     }
 }
 
@@ -24,8 +25,8 @@ void GameMap::setPlayerCell(int playerX, int playerY)
         playerCell->id = 0;
     }
 
-    playerCell = &cells[playerX][playerY];
+    playerCell = &cells[playerY][playerX];
     playerCell->id = 3;
-    //cout << "Las coordenadas del jugador estan en: " << PlayerX << "," << PlayerY;
+    cout << "Las coordenadas del jugador estan en: " << playerY << "," << playerX << endl;
 }
 

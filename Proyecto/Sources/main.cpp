@@ -12,7 +12,6 @@ int main()
     bool isGameOver = false;
     GameMap Map;
     Player Hero;
-
     cout << "Inicia el juego!!!!" << endl;
 
     while(isGameOver == false)
