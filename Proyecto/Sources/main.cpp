@@ -20,10 +20,15 @@ int main()
         Hero.callInput();
 
         //Actualizado de informacion heroe a Mapa
-        Map.setPlayerCell(Hero.x, Hero.y);
+        if(Map.setPlayerCell(Hero.x, Hero.y)){
+            Map.draw();
+        }else{
+            Hero.resetToSafePosition();
+            Map.draw();
+        }
 
         //Aqui dibujamos el mapa
-        Map.draw();
+        
     }
 
     return 0;

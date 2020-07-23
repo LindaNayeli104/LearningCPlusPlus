@@ -14,14 +14,14 @@ class GameMap
         void draw();
 
         //Esta funcion obtiene las coordenadas de player y actualiza el mapa
-        void setPlayerCell(int playerX, int playerY);
+        bool setPlayerCell(int playerX, int playerY);
 
         
 
 
     protected:
        
-        
+         void loadMapFromFile();
 
     private:
 
