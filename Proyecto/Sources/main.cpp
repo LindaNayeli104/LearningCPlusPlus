@@ -9,14 +9,19 @@ using namespace std;
 
 int main()
 {
-    bool isGameOver = false;
+    
     GameMap Map;
     Player Hero;
+
+    Map.drawIntro();
+    Map.draw();
+     
     cout << "Inicia el juego!!!!" << endl;
 
-    while(isGameOver == false)
+    while(Map.isGameOver == false)
     {
         // Aqui es el loop de nuestro juego
+        cout << "Introduce el comando de movimiento 'w' 'a' 's' 'd': " << endl;
         Hero.callInput();
 
         //Actualizado de informacion heroe a Mapa
